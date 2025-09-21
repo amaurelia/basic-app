@@ -1,5 +1,6 @@
 package cl.duoc.basico.ui
 
+import PerfilConFotoUI
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -37,39 +38,6 @@ fun InicioScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
-        Text(
-            text = "Hola Mundo"
-        )
-
-        Button(onClick = { }) {
-            Text("Presióname")
-        }
-
-        TextField(
-            value = texto,
-            onValueChange = { texto = it },
-            label = { Text("Ingresa texto") }
-        )
-
-        Spacer(
-            modifier = Modifier.height(70.dp)
-        )
-
-        Image(
-            painter = painterResource(id = R.drawable.gato1),
-            contentDescription = "Logo"
-        )
-
-        LazyColumn {
-            items(5) { index ->
-                Text("Elemento $index")
-            }
-        }
-        Checkbox(
-            checked = checked,
-            onCheckedChange = { checked = it }
-        )
-
+        PerfilConFotoUI()
     }
 }

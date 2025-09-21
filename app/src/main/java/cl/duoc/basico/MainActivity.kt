@@ -1,5 +1,6 @@
 package cl.duoc.basico
 
+import PerfilConFotoUI
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,7 +19,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             BasicoTheme {
-                InicioScreen(viewModel)
+                //InicioScreen(viewModel)
+                PerfilConFotoUI()
             }
         }
     }
