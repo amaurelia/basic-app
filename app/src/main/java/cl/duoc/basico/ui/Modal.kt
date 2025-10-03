@@ -1,6 +1,5 @@
 package cl.duoc.basico.ui
 
-import PerfilConFotoUI
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -8,6 +7,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Text
@@ -25,19 +25,32 @@ import cl.duoc.basico.R
 import cl.duoc.basico.viewmodel.InicioViewModel
 
 @Composable
-fun InicioScreen(
-    viewModel: InicioViewModel
-) {
+fun ModalScreen() {
 
-    // variables de estado
-    var texto by remember { mutableStateOf("") }
-    var checked by remember { mutableStateOf(true) }
+    var mostrarModal by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        PerfilConFotoUI()
+        Text("Bienvenido a tu aplicación")
+        Button(onClick = { mostrarModal = true }) {
+            Text("Comenzar")
+        }
     }
+
+    if (mostrarModal) {
+        AlertDialog(
+            onDismissRequest = { mostrarModal = false },
+            title = { Text("Mensaje") },
+            text = { Text("Hola") },
+            confirmButton = {
+                Button(onClick = { mostrarModal = false }) {
+                    Text("OK")
+                }
+            }
+        )
+    }
+
 }
