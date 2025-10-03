@@ -21,7 +21,7 @@ import androidx.navigation.compose.rememberNavController
 import cl.duoc.basico.R
 
 @Composable
-fun MainScreen() {
+fun Navegacion() {
     val navController = rememberNavController()
     NavHost(navController, startDestination = "pagina1") {
         composable("pagina1") { Pagina1(navController) }

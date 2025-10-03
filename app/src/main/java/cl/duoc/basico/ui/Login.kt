@@ -21,7 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Formulario(){
+fun Login(){
 
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }

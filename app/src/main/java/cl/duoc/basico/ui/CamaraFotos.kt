@@ -1,5 +1,4 @@
 import android.Manifest
-import android.content.Context
 import android.graphics.Bitmap
 import android.net.Uri
 import android.provider.MediaStore
@@ -19,7 +18,7 @@ import androidx.core.content.FileProvider
 import java.io.File
 
 @Composable
-fun PerfilConFotoUI() {
+fun CamaraFotos() {
     val context = LocalContext.current
     var imageUri by remember { mutableStateOf<Uri?>(null) }
     var bitmap by remember { mutableStateOf<Bitmap?>(null) }

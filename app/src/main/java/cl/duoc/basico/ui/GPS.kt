@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import com.google.android.gms.location.*
 
 @Composable
-fun UbicacionGPSUI() {
+fun GPS() {
     val context = LocalContext.current
     var location by remember { mutableStateOf<Location?>(null) }
     var permisoConcedido by remember { mutableStateOf(false) }
