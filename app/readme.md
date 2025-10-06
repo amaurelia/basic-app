@@ -41,7 +41,7 @@ Esta estructura permite organizar el código siguiendo el patrón MVVM.
 - **Modal.kt:** Ejemplo de modal usando `AlertDialog`.
 - **GPS.kt:** Obtiene y muestra la localización del dispositivo.
 - **ImagenGato.kt:** Muestra imágenes desde recursos.
-- **AgregarUsuarios.kt:** Pantalla para agregar nuevos usuarios al sistema.
+- **AgregarUsuarios.kt:** Pantalla para agregar nuevos git pulusuarios al sistema.
 - **Login.kt:** Pantalla de inicio de sesión.
 - **Navegacion.kt:** Ejemplo de navegación entre pantallas.
 - **CamaraFotos.kt:** Permite tomar fotos usando la cámara del dispositivo.
