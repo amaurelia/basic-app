@@ -14,7 +14,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BasicoTheme{ // <- aquí va el nombre de TU TEMA, lo puedes encontrar en ui/theme/Theme.kt
-                BotonCargando()
+                FormularioMVVM()
+                //BotonCargando()
                 //TextoInvertido()
                 //Persistencia()
                 //UsuarioFormScreen()
