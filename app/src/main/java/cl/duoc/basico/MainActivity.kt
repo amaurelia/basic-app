@@ -6,15 +6,16 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import cl.duoc.basico.ui.*
 import cl.duoc.basico.ui.theme.BasicoTheme
+import cl.duoc.basico.viewmodel.FormularioViewModel
 
 class MainActivity : ComponentActivity() {
 
-
+    private val viewModel = FormularioViewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             BasicoTheme{ // <- aquí va el nombre de TU TEMA, lo puedes encontrar en ui/theme/Theme.kt
-                FormularioMVVM()
+                Formulario(viewModel)
                 //BotonCargando()
                 //TextoInvertido()
                 //Persistencia()
