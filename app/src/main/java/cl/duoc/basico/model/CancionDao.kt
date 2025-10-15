@@ -4,7 +4,7 @@ import androidx.room.*
 
 @Dao
 interface CancionDao {
-    @Query("SELECT * FROM canciones")
+    @Query("SELECT * FROM canciones LIMIT 3")
     suspend fun getAll(): List<Cancion>
 
     @Insert

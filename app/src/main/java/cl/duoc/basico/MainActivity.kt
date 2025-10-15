@@ -1,6 +1,7 @@
 package cl.duoc.basico
 
 
+import GPS
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -29,7 +30,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BasicoTheme{ // <- aquí va el nombre de TU TEMA, lo puedes encontrar en ui/theme/Theme.kt
-                Canciones(viewModelCanciones)
+                GoogleMaps()
+                //Canciones(viewModelCanciones)
                 //Formulario(viewModelForm)
                 //BotonCargando()
                 //TextoInvertido()
@@ -41,7 +43,7 @@ class MainActivity : ComponentActivity() {
                 //Navegacion()
                 //CamaraFotos()
                 //ModalScreen()
-                //GPS()
+                // GPS()
                 //AgregarUsuarios()
                 // TocarPantalla()
             }
